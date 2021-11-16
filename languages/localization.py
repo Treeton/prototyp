@@ -13,6 +13,6 @@ def get_language(code):
 # method to get the translation function
 def get_translation(page, code):
     print(os.getcwd())
-    path = os.getcwd() + '\\languages'
+    path = os.getcwd() + '/languages'
     lang = gettext.translation(page, localedir=path, languages=[code])
     return lang.gettext
